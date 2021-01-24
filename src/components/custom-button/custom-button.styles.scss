@@ -1,0 +1,16 @@
+.custom-button {
+  width: 100%;
+  opacity: 0.5;
+  border: 1px solid black;
+  background-color: rgb(202,216,216);
+  box-shadow: 0 1px 4px black;
+  border-radius: 2px;
+  font-size: 17px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

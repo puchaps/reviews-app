@@ -1,0 +1,28 @@
+.reviews-preview {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 1px;
+  margin-top: 100px;
+
+  .reviews-preview-title {
+    text-align: center;
+
+    h1 {
+      position: relative;
+      font-size: 35px;
+      padding-bottom: 10px;
+      opacity: 0.8;
+
+      &:after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        background-color: rgb(202,216,216);
+        width: 30%;
+        margin-left: 15px;
+        bottom: 0;
+        right: 33%;
+      } 
+    }
+  }
+}

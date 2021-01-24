@@ -1,0 +1,9 @@
+.arrow {
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+}
