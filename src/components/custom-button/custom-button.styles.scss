@@ -14,3 +14,9 @@
     opacity: 0.8;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .custom-button {
+      font-size: 14px;
+    }
+}

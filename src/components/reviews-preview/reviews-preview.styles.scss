@@ -1,5 +1,5 @@
 .reviews-preview {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
   border-radius: 1px;
   margin-top: 100px;
@@ -9,7 +9,7 @@
 
     h1 {
       position: relative;
-      font-size: 35px;
+      font-size: 2vw;
       padding-bottom: 10px;
       opacity: 0.8;
 
@@ -26,3 +26,42 @@
     }
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .reviews-preview  {
+    width: 50%;
+
+    .reviews-preview-title {
+      h1 {
+        font-size: 3vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .reviews-preview  {
+    width: 60%;
+
+    .reviews-preview-title {
+      h1 {
+        font-size: 4vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-preview {
+    width: 70%;
+
+    .reviews-preview-title {
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+
+

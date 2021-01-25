@@ -76,8 +76,16 @@
   }
 
   .review-item-random {
-    width: 35%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .review-item {
+    .review-item-random {
+      width: 70%;
+    }
   }
 }
