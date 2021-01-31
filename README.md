@@ -1,13 +1,5 @@
 # Reviews-App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Use of Technology
-### `React-Hooks`
-
-The project used such hooks as:
-[useState](https://reactjs.org/docs/hooks-reference.html#usestate),
-[useContext](https://reactjs.org/docs/hooks-reference.html#usecontext).
 
 ## Available Scripts
 
