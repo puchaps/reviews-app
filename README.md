@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### `React-Hooks`
 
 The project used such hooks as:
-[useState](https://reactjs.org/docs/hooks-reference.html#usestate);
+[useState](https://reactjs.org/docs/hooks-reference.html#usestate),
 [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext).
 
 ## Available Scripts
