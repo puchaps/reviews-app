@@ -5,8 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Use of Technology
 ### `React-Hooks`
 
-## Use Data-Base
-### `Local-data`
+The project used such hooks as:
+[useState](https://reactjs.org/docs/hooks-reference.html#usestate);
+[useContext](https://reactjs.org/docs/hooks-reference.html#usecontext).
 
 ## Available Scripts
 
