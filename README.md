@@ -3,8 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Use of Technology
-![React](https://img.shields.io/badge/-React-24292e?style=for-the-badge&logo=React):
 ### `React-Hooks`
+### `Local-data`
 
 ## Available Scripts
 
