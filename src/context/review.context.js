@@ -1,40 +1,39 @@
-import React, { useState } from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react";
 
-import REVIEWS_USER from '../data/reviews.data';
+import reviewsDB from "../data/reviews.data";
 
-import { 
+import {
   nextUserReview,
   previousUserReview,
   currentUserPreview,
-  randomUserPreview
-} from './utils/review.utils';
+  randomUserPreview,
+} from "./utils/review.utils";
 
 export const ReviewContext = React.createContext();
 
 const ReviewProvider = ({ children }) => {
-  const[usersReviews, setUsersReviews] = useState(REVIEWS_USER);
-  const[indexUser, setIndexUser] = useState(0);
-  
-  const nextUserReviewWrapper = () => (
-    nextUserReview(usersReviews, indexUser, setIndexUser)
-  );
-  const previousUserReviewWrapper = () => (
-    previousUserReview(usersReviews, indexUser, setIndexUser)
-  );
-  const currentUserPreviewWrapper = () => (
-    currentUserPreview(usersReviews, indexUser, setIndexUser)
-  );
-  const randomUserPreviewWrapper = () => (
-    randomUserPreview(usersReviews, setIndexUser)
-  );
+  const [usersReviews, setUsersReviews] = useState(reviewsDB);
+  const [indexUser, setIndexUser] = useState(0);
 
-  return(
-    <ReviewContext.Provider value = {{
-      nextUserReviewWrapper,
-      previousUserReviewWrapper,
-      currentUserPreviewWrapper,
-      randomUserPreviewWrapper
-      }}>
+  const nextUserReviewWrapper = () =>
+    nextUserReview(usersReviews, indexUser, setIndexUser);
+  const previousUserReviewWrapper = () =>
+    previousUserReview(usersReviews, indexUser, setIndexUser);
+  const currentUserPreviewWrapper = () =>
+    currentUserPreview(usersReviews, indexUser, setIndexUser);
+  const randomUserPreviewWrapper = () =>
+    randomUserPreview(usersReviews, setIndexUser);
+
+  return (
+    <ReviewContext.Provider
+      value={{
+        nextUserReviewWrapper,
+        previousUserReviewWrapper,
+        currentUserPreviewWrapper,
+        randomUserPreviewWrapper,
+      }}
+    >
       {children}
     </ReviewContext.Provider>
   );

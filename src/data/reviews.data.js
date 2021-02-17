@@ -1,4 +1,4 @@
-const REVIEWS_USER = [
+const reviewsDB = [
   {
     id: 1,
     name: 'Susan Smith',
@@ -37,4 +37,4 @@ const REVIEWS_USER = [
   },
 ];
 
-export default REVIEWS_USER;
+export default reviewsDB;
